@@ -52,31 +52,16 @@ function highlight(word) {
 	}
 }
 
-// //Erase Letters On Keyboard Clicks//
-//
-// function erase() {
-// 	window.onkeydown = document.getElementById("erase") {
-// 	switch (event.keyCode) {
-// 		case 69:
-// 			$(".e").css("display", "none");
-// 			break;
-// 		case 78:
-// 			$(".n").css("display", "none");
-// 			break;
-// 		case 71:
-// 			$(".g").css("display", "none");
-// 			break;
-// 		case 65:
-// 			$(".a").css("display", "none");
-// 			break;
-// 		case 71:
-// 			$(".g").css("display", "none");
-// 			break;
-// 		case 69:
-// 			$(".e").css("display", "none");
-// 			break;
-// 	}
-// }};
+// Keyboard Events //
+const input = document.querySelector('input');
+const log = document.getElementById('log');
+
+input.addEventListener('keydown', logKey);
+
+function logKey(e) {
+	log.textContent += ` ${e.code}`;
+}
+
 
 // document.getElementById("button1").addEventListener("click", changeColor1);
 //
