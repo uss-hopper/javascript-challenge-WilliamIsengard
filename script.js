@@ -32,3 +32,13 @@ function button4() {
 // function changeColor3() {
 // 	document.getElementById("paragraph3").style.color = "#9242f4";
 // }
+
+function highlight(word) {
+	var inputText = document.getElementById("highlightWord");
+	var innerHTML = inputText.innerHTML;
+	var index = innerHTML.indexOf(word);
+	if (index >= 0) {
+		innerHTML = innerHTML.substring(0,index) + "<span class='highlighter'>" + innerHTML.substring(index,index+word.length) + "</span>" + innerHTML.substring(index + word.length);
+		inputText.innerHTML = innerHTML;
+	}
+}
