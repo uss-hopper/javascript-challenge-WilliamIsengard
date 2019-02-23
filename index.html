@@ -19,17 +19,13 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	<!-- Project JS File -->
-	<script src="./script.js"></script>
+	<script type="text/javascript" src="./script.js"></script>
 
 </head>
 
-<body>
+<body class="body">
 
-	<h1>Javascript Challenge: A Star Trek Adventure</h1>
-
-		<br>
-
-	<h2>Move Mouse Over Paragraphs To Change Color Or Click Buttons To Make Changes</h2>
+	<h1 id="resistance">Javascript Challenge: A Star Trek Adventure</h1>
 
 		<br>
 
@@ -37,23 +33,32 @@
 		<div id="highlightWord">
 
 			<p id="paragraph1" onmouseover="mouseover1()">These are the voyages of the Starship Enterprise. Its continuing mission, to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no one has gone before. We need to neutralize the homing signal. Each unit has total environmental control, gravity, temperature, atmosphere, light, in a protective field. Sensors show energy readings in your area. We had a forced chamber explosion in the resonator coil. Field strength has increased by 3,000 percent.</p>
-			<button onclick="button1()">Change Paragraph Color</button>
+			<button onclick="button1()">Change Color</button>
+			<button class="resistance" onclick="button1b()">Do Not Press!!!</button>
+				<br>
+				<br>
 
 			<p id="paragraph2" onmouseover="mouseover2()">Shields up. I recommend we transfer power to phasers and arm the photon torpedoes. Something strange on the detector circuit. The weapons must have disrupted our communicators. You saw something as tasty as meat, but inorganically materialized out of patterns used by our transporters. Captain, the most elementary and valuable statement in science, the beginning of wisdom, is 'I do not know.' All transporters off.</p>
-			<button onclick="button2()">Change Paragraph Color</button>
+			<button onclick="button2()">Change Color</button>
+			<button class="resistance" onclick="button2b()">Do Not Press!!!</button>
+				<br>
+				<br>
 
 			<p id="paragraph3" onmouseover="mouseover3()">Deflector power at maximum. Energy discharge in six seconds. Warp reactor core primary coolant failure. Fluctuate phaser resonance frequencies. Resistance is futile. Recommend we adjust shield harmonics to the upper EM band when proceeding. These appear to be some kind of power-wave-guide conduits which allow them to work collectively as they perform ship functions. Increase deflector modulation to upper frequency band.</p>
-			<button onclick="button3()">Change Paragraph Color</button>
+			<button onclick="button3()">Change Color</button>
+			<button class="resistance" onclick="button3b()">Do Not Press!!!</button>
 				<br>
 				<br>
-			<button onclick="button4()">Change All Fonts</button>
+
+			<button onclick="button4()">Change Font</button>
 				<br>
 				<br>
-			<button onclick="highlight('Enterprise')">Highlight Enterprise</button>
+
+			<button onclick="highlight('Enterprise')">Locate Enterprise</button>
 				<br>
 				<br>
-			<input placeholder="Click here, then press down a key." size="40">
-			<p id="log"></p>
+
+			<button class="reset" onClick="document.location.reload(true)">Reset Page</button>
 
 		</div>
 	</div>

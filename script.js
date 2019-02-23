@@ -37,7 +37,7 @@ function mouseover2() {
 //Change Paragraph1 Color On Mouseover//
 
 function mouseover3() {
-	window.onmouseover = document.getElementById("paragraph3").style.color = "#5642f4";
+	window.onmouseover = document.getElementById("paragraph3").style.color = "#f442b9";
 }
 
 //Word Highlighter//
@@ -52,31 +52,18 @@ function highlight(word) {
 	}
 }
 
-// Keyboard Events //
-const input = document.querySelector('input');
-const log = document.getElementById('log');
-
-input.addEventListener('keydown', logKey);
-
-function logKey(e) {
-	log.textContent += ` ${e.code}`;
+// Find and Replace Paragraph 1 //
+function button1b() {
+	window.onclick = document.getElementById("paragraph1").innerHTML="Resistance is futile!!!";
 }
 
+// Find and Replace Paragraph 2 //
+function button2b() {
+	window.onclick = document.getElementById("paragraph2").innerHTML="Resistance is futile!!!";
+}
 
-// document.getElementById("button1").addEventListener("click", changeColor1);
-//
-// function changeColor1() {
-// 	document.getElementById("paragraph1").style.color = "#f44e42";
-// }
-//
-// document.getElementById("button2").addEventListener("click", changeColor2);
-//
-// function changeColor2() {
-// 	document.getElementById("paragraph2").style.color = "#41f4d6";
-// }
-//
-// document.getElementById("button3").addEventListener("click", changeColor3);
-//
-// function changeColor3() {
-// 	document.getElementById("paragraph3").style.color = "#9242f4";
-// }
+// Find and Replace Paragraph 3 //
+function button3b() {
+	window.onclick = document.getElementById("paragraph3").innerHTML="Resistance is futile!!!";
+}
+

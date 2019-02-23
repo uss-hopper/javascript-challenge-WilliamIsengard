@@ -1,3 +1,29 @@
 .highlighter {
 	background-color: #8642f4;
 }
+
+.body {
+	width: 800px;
+	margin: 0 auto;
+	background-color: lightsteelblue;
+	text-align: center;
+}
+
+button {
+	border: 0;
+	background: lightsalmon;
+	-webkit-appearance: none;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+.reset {
+	background: indianred;
+	font-weight: bolder;
+}
+
+.resistance {
+	background: limegreen;
+	font-weight: bolder;
+}
